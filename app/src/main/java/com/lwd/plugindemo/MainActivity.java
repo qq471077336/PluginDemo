@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 try {
-                    Class<?> aClass = Class.forName("com.lwd.plugintest.Test");
+                    Class<?> aClass = Class.forName("com.lwd.plugin.Test");
                     Method print = aClass.getMethod("print");
                     print.invoke(null);
                 } catch (Exception e) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent();
                 intent.setComponent(new ComponentName(
-                        "com.lwd.plugintest", "com.lwd.plugintest.PluginTestActivity"));
+                        "com.lwd.plugin", "com.lwd.plugin.MainActivity"));
                 startActivity(intent);
 
             }

@@ -1,4 +1,4 @@
-package com.lwd.plugintest;
+package com.lwd.plugin;
 
 import org.junit.Test;
 

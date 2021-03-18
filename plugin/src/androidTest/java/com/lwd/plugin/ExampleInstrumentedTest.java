@@ -1,4 +1,4 @@
-package com.lwd.plugintest;
+package com.lwd.plugin;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.lwd.plugintest", appContext.getPackageName());
+        assertEquals("com.lwd.plugin", appContext.getPackageName());
     }
 }

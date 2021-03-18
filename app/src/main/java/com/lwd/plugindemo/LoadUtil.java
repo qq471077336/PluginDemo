@@ -1,15 +1,18 @@
 package com.lwd.plugindemo;
 
 import android.content.Context;
+import android.content.res.AssetManager;
+import android.content.res.Resources;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 import dalvik.system.DexClassLoader;
 
 public class LoadUtil {
 
-    private final static String apkPath = "/sdcard/plugintest-debug.apk";
+    private final static String apkPath = "/sdcard/plugin-debug.apk";
 
     public static void loadClass(Context context) {
 
@@ -73,5 +76,6 @@ public class LoadUtil {
             e.printStackTrace();
         }
     }
+
 
 }
